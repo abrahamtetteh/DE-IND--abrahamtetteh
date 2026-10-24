@@ -5,3 +5,5 @@ TC-01 (Normal Checkout): Verify successful order submission and distance deliver
 TC-02 (Stock Validation): Verify error response when ordering items exceeding available inventory. Status: Passed.
 
 TC-03 (POS State Transition): Verify kitchen staff transition order state from PENDING to PREPARING. Status: Passed.
+. Continuous Integration (CI)
+GitHub Actions workflow automatically runs ESLint linting and Jest test suites on every pull request to prevent regression bugs (Risk R-08).
