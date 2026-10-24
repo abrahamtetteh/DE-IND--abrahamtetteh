@@ -1,1 +1,27 @@
+IA05: API Contract and Failure-Response Walkthrough
+1. API Endpoint Specification
+Endpoint: POST /api/v1/orders
 
+Description: Submits a new customer order with delivery address coordinates and line items.
+
+Authentication: Bearer token (JWT).
+
+2. Request Payload Schema (JSON)
+JSON
+{
+  "customer_name": "Kofi Mensah",
+  "phone_number": "+233541234567",
+  "delivery_address": "East Legon, Accra",
+  "items": [
+    {
+      "menu_item_id": "item_jollof_01",
+      "quantity": 2
+    }
+  ]
+}
+3. Response Schemas and Error Handling
+Success Response (HTTP 201 Created): Returns order ID, calculated distance delivery fee, and status PENDING.
+
+Error Response (HTTP 422 Unprocessable Entity): Missing required contact details or delivery coordinates.
+
+Error Response (HTTP 409 Conflict): Inventory stock insufficient for requested item quantity.
