@@ -1,4 +1,6 @@
-IA08: Deployment Readiness, Release Evidence and Rollback Walkthrough
+IA08: 
+https://youtu.be/L7gU-NsRVp8
+Deployment Readiness, Release Evidence and Rollback Walkthrough
 1. Environment Configuration
 NEXT_PUBLIC_SUPABASE_URL: Production Supabase project endpoint.
 
